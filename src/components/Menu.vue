@@ -15,7 +15,7 @@
             <router-link to="/coches" class="nav-link" >Coches</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Disabled</a>
+            <router-link to="/empleadosdetalle" class="nav-link" >Empleados Detalles</router-link>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
