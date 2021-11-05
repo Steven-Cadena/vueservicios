@@ -10,7 +10,7 @@ export default class ServiceEjemplo{
         var num = 0;
         if (num == 0 ){
             //DEBEMOS DEVOLVER ALGO EN RESOLVE O EN REJECT
-            resolve("Ok");
+            resolve("Alfajor xD");
         }else{
             reject("Respuesta Error");
         }
@@ -19,18 +19,19 @@ export default class ServiceEjemplo{
     getPromesaSimple = new Promise(function(resolve){
             resolve("Ok");
     });
-    
-    getEmpleado(){
-        var request = "/api/empleados/7839";
-        var url = Global.urlapiempleados + request;
-        var empleado = {
-            apellido:"no soy nadie"
-        };
-        axios.get(url).then(res =>{
-            empleado = res.data;
-            console.log(empleado);
-            return empleado;
+
+    getEmpleado(idempleado){
+        return new Promise(function(resolve){
+            var request = "/api/empleados/" + idempleado;
+            var url = Global.urlapiempleados + request;
+            var empleado = {
+                apellido:"no soy nadie"
+            };
+            axios.get(url).then(res =>{
+                empleado = res.data;
+                resolve(empleado);
+            });
         });
-        return empleado;
     }
+    
 }

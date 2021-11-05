@@ -24,7 +24,9 @@ export default {
         }
     }, mounted(){
         this.saludo = service.getSaludo("Aguacate");
-        this.empleado = service.getEmpleado();
+        service.getEmpleado(7566).then(result =>{
+            this.empleado = result;
+        });
         //PROMESAS SE LLAMAN CON THEN
         service.getPromesa.then(result => {
             //AQUI LOS DATOS
