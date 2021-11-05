@@ -43,7 +43,6 @@ export default {
             empleados:[],
         }
     }, mounted(){
-        console.log(this.selectOficio);
         service.getOficios().then(result=>{
             this.oficios = result;
         });
