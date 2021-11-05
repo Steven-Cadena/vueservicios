@@ -17,6 +17,9 @@
           <li class="nav-item">
             <router-link to="/empleadosdetalle" class="nav-link" >Empleados Detalles</router-link>
           </li>
+          <li class="nav-item">
+            <router-link to="/empleadosoficios" class="nav-link" >Empleados Oficios</router-link>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown03">
