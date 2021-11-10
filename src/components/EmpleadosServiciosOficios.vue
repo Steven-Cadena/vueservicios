@@ -33,7 +33,7 @@
 <script>
 
 import ServiceEmpleados from './../services/ServicioEmpleados';
-const service = new ServiceEmpleados;
+const service = new ServiceEmpleados();
 export default {
     name:"EmpleadosServiciosOficios",
     data(){
@@ -43,11 +43,14 @@ export default {
             empleados:[],
         }
     }, mounted(){
-        service.getOficios().then(result=>{
-            this.oficios = result;
-        });
+        this.cargarOficios();
 
     },methods:{
+        cargarOficios(){
+            service.getOficios().then(result=>{
+            this.oficios = result;
+        });
+        },
         cargarEmpleados(){
             service.getEmpleadosOficios(this.selectOficio).then(result=>{
             this.empleados = result;

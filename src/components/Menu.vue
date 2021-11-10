@@ -24,7 +24,7 @@
             <router-link to="/ejemploservicios" class="nav-link" >Ejemplo Servicios</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/empleadosserviciosoficios" class="nav-link" >Ejemplo Servicios Oficios</router-link>
+            <router-link to="/empleadosserviciosoficios" class="nav-link" >Empleados Oficios Servicios</router-link>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
